@@ -71,7 +71,7 @@
     gap: 5px;
     background-color: #FF7724;
     top: -50px;
-    left: -10px;
+    left: -30px;
     border-radius: 0px 8px 8px 0px;
   }
   
@@ -184,6 +184,11 @@
     color: white;
     font-size: 16px;
     line-height: 24px;
+    border: none;
+  }
+
+  .button:hover {
+    transform: scale(1.03);
   }
 
   .part3inner {
