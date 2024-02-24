@@ -1,0 +1,142 @@
+.mainblock {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 75%;
+}
+
+.topheading {
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.lowerimagebox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.offbox {
+    display: flex ;
+    gap: 4px;
+}
+
+.offdetails {
+    color: #074786;
+    padding:0px 20px 0px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #F2F4F7;
+}
+
+.webinar {
+    color: #626E79;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.details {
+    font-size: 16px;
+    line-height: 24px;
+    color: #626E79;
+    width: 85%;
+}
+
+.last {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 15px;
+}
+
+.discount {
+  font-size: 20px;
+  line-height: 28px;
+  color: #5C6874;
+}
+
+.actual {
+    color: #9FA9B3;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+.offdata {
+    color: #EF4C5D;
+    font-size: 13px;
+    line-height: 20px;
+    padding-top: 5px;
+}
+
+.gridbox {
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.viewbutton {
+    width: 100%;
+    background-color: #1B88F4;
+    color: white;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+.lowercontentblock {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+}
+
+.lowercontent {
+    font-size: 32px;
+    line-height: 44px;
+    color: #5C6874;
+}
+.input {
+    width: 348px;
+    background-color: white;
+    height: 52px;
+}
+
+.buttonsignup {
+    background-color: #1B88F4;
+    color: white;
+    width: 97px;
+    height: 52px;
+    border-radius: 0px 12px 12px 0px;
+}
+
+@media screen and (max-width: 1024px) {
+    .lowercontentblock {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gridcontainer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gridcontainer {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
