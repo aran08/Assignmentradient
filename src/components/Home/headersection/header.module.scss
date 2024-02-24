@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 20px 0px 20px 0px;
+    padding: 80px 0px 20px 0px;
 }
 
 .innerheader {
@@ -21,6 +21,8 @@
 
 .subheading {
     display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
     justify-content: space-between;
     border-top: 2px rgba(0, 0, 0, 0.3) solid;
     border-bottom: 2px rgba(0, 0, 0, 0.3) solid;
@@ -31,6 +33,7 @@
 .elements {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
     align-items: center;
     text-decoration-color: #626E79;
 }
@@ -41,6 +44,7 @@
 
 .buttonarea {
     display: flex;
+    flex-wrap: wrap;
     row-gap: 10px;
     margin: 10px 0px;
 }
@@ -67,17 +71,9 @@
 .flow {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
     text-decoration-color: #5C6874;
-}
-
-.flow p {
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
 }
 
 @media screen and (max-width: 1024px) {
@@ -90,23 +86,6 @@
         padding: 0px 10px 0px 5px;
         margin-right: 5px;
     }
-
-    .button p {
-        font-size: 8px;
-        font-weight: 400;
-        // line-height: 20px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
-
-    .flow p {
-        font-family: Inter;
-        font-size: 8px;
-        font-weight: 400;
-        line-height: 12px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
 }
 
 @media screen and (max-width: 430px) {
@@ -118,22 +97,5 @@
     .button { 
         padding: 0px 10px 0px 5px;
         margin-right: 5px;
-    }
-
-    .button p {
-        font-size: 8px;
-        font-weight: 400;
-        // line-height: 20px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
-
-    .flow p {
-        font-family: Inter;
-        font-size: 8px;
-        font-weight: 400;
-        line-height: 12px;
-        letter-spacing: 0em;
-        text-align: left;
     }
 }

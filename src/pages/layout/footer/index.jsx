@@ -11,7 +11,7 @@ const Index = () => {
       <div className={styles.innercontainer}>
         {FooterData.map((items, index) => (
           <div key={index} className={styles.Elements}>
-            <p className="title">{items.title}</p>
+            <p className={styles.title}>{items.title}</p>
             {items.Data.map((data, id) => (
               <p key={id}>{data.data}</p>
             ))}

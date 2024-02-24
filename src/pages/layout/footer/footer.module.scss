@@ -1,13 +1,15 @@
 .maincontainer {
-    height: 452px;
+
     background-color: #212731;
     display: flex;
     justify-content: center;
+    padding-bottom: 15%;
 }
 
 .innercontainer {
     width: 65%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 50px;
 }
@@ -23,14 +25,14 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    text-decoration-color: #B6BDC4;
+    color:#B6BDC4 ;
     padding-top: 10px;
 }
 
 .Elements .title {
     font-size: 16px;
     line-height: 24px;
-    text-decoration-color: white;
+    color: white;
 }
 
 .thirdpart {
@@ -49,14 +51,20 @@
     line-height: 24px;
 }
 
-@media screen and (max-width: 668px) {
-    .innercontainer {
-        width: 80%;
-    }
-}
+@media screen and (max-width: 500px) {
 
-@media screen and (max-width: 340px) {
     .innercontainer {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Elements {
+        width: 65%;
+    }
+
+    .thirdpart {
+        width: 65%;
     }
 }

@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .innercontainer {
@@ -51,7 +52,7 @@
     top: 20%;
     height: 2.5rem;
     width: 2.5rem;
-    border: 2px solid;
+    border: 2px solid #E1E4E6;
     font-size: 1.25rem;
     color: #626E79;
     border-radius: 50%;
@@ -230,8 +231,8 @@
   }
   
 
-@media screen and (max-width: 1024px) {
-    .box {
+@media screen and (max-width: 1166px) {
+    .innerbox {
         display: flex;
         flex-direction: column;
     }
