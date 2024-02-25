@@ -34,9 +34,9 @@ const Index = () => {
       </div>
        <div className={styles.lowercontentblock}>
         <p className={styles.lowercontent}>{LowerBlockData.lowercontent}</p>
-        <div>
-        <input  className={styles.input}/>
-        <button className={styles.buttonsignup}>{LowerBlockData.buttoncontent}</button>
+        <div className={styles.signup}>
+         <input  className={styles.input}/>
+         <button className={styles.buttonsignup}>{LowerBlockData.buttoncontent}</button>
         </div>
         
        </div>
