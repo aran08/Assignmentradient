@@ -9,6 +9,7 @@ const Index = () => {
   return (
     <div className={styles.maincontainer}>
       <div className={styles.innercontainer}>
+        <div className={styles.innerwraper}>
         {FooterData.map((items, index) => (
           <div key={index} className={styles.Elements}>
             <p className={styles.title}>{items.title}</p>
@@ -17,6 +18,7 @@ const Index = () => {
             ))}
           </div>
         ))}
+        </div>
         <div className={styles.thirdpart}>
             <p>United State</p>
             <Image src="/images/IMAGE2.png" alt="lowerdown" width={15} height={9}/>

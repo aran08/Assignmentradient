@@ -1,5 +1,4 @@
 .maincontainer {
-
     background-color: #212731;
     display: flex;
     justify-content: center;
@@ -15,9 +14,14 @@
 }
 
 .Elements {
-    width: 30%;
+    width: 50%;
     color: #D1D6DA;
     padding-top: 5px;
+}
+
+.innerwraper {
+    display: flex;
+    width: 66.66%;
 }
 
 .Elements p {
@@ -51,20 +55,36 @@
     line-height: 24px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1024px) {
+          
+    .innercontainer {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 518px) {
 
     .innercontainer {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
+        width: 80% ;
     }
 
     .Elements {
-        width: 65%;
+        width: auto;
+    }
+
+    .innerwraper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .thirdpart {
         width: 65%;
+        display: flex;
+        justify-content: center;
     }
 }
