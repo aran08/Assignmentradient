@@ -1,9 +1,16 @@
-"use client"
+"use client";
 
-import React from "react";
+import React, { useState } from "react";
 import styles from "./navbar.module.scss";
 
 const Index = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // console.log(isMenuOpen);
+
   return (
     <div className={styles.maincontainer}>
       <div className={styles.innercontainer}>
@@ -18,12 +25,20 @@ const Index = () => {
 
         <div className={styles.menusection}>
           <p className={styles.menutext}>MENU</p>
-          <div className={styles.menulines}>
+          <div className={styles.menulines} onClick={toggleMenu}>
             <p className={styles.line} />
             <p className={styles.line} />
             <p className={styles.line} />
           </div>
         </div>
+
+        {isMenuOpen && (
+          <div className={styles.dropdownContent}>
+            <p>Categories</p>
+            <p>Website Builders</p>
+            <p>Today's deals</p>
+          </div>
+        )}
       </div>
     </div>
   );
